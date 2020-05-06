@@ -107,7 +107,7 @@ class MySqlConnection {
   /// A [TimeoutException] is thrown if there is a timeout in the handshake with the
   /// server.
   static Future<MySqlConnection> connect(ConnectionSettings c) async {
-    assert(!c.useSSL); // Not implemented
+    //assert(!c.useSSL); // Not implemented
     assert(!c.useCompression);
 
     ReqRespConnection conn;
